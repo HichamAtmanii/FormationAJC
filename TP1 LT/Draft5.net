@@ -1,0 +1,14 @@
+* C:\Users\hicha\OneDrive\Bureau\Draft5.asc
+V1 V1 0 PULSE(0 5 0 10ns 10ns 1ms 2ms 0)
+V2 V2 0 PULSE(0 5 0 10ns 10ns 2ms 4ms 0)
+M1 N001 V1 Vout Vout NMOS
+M2 N001 V2 Vout Vout NMOS
+M3 N002 V1 Vout Vout PMOS
+M4 0 V2 N002 N002 PMOS
+V3 N001 0 5
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\Users\hicha\AppData\Local\LTspice\lib\cmp\standard.mos
+.tran 20ms
+.backanno
+.end

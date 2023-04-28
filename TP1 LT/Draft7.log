@@ -1,0 +1,25 @@
+Circuit: * C:\Users\hicha\OneDrive\Bureau\Draft7.asc
+
+Direct Newton iteration for .op point succeeded.
+Changing Tseed to 1e-09
+Changing Tseed to 1e-11
+Changing Tseed to 1e-08
+Changing Tseed to 1e-12
+
+Date: Fri Apr 28 10:05:54 2023
+Total elapsed time: 0.065 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 7030
+traniter = 7026
+tranpoints = 2822
+accept = 2510
+rejected = 308
+matrix size = 8
+fillins = 0
+solver = Normal
+Avg thread counts: 1.1/1.2/1.2/1.1
+Matrix Compiler1:      18 opcodes  0.1/[0.1]/0.1
+Matrix Compiler2: off
