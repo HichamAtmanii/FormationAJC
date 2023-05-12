@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/hicha/OneDrive/Bureau/TP3/Counter_unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'counter_unit'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/hicha/OneDrive/Bureau/TP3/tp_fsm.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tp_fsm'

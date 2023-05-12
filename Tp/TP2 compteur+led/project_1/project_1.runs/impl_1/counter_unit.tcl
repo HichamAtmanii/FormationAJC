@@ -17,7 +17,7 @@ proc create_report { reportName command } {
   }
 }
 namespace eval ::optrace {
-  variable script "C:/Users/hicha/OneDrive/Bureau/tp2/project_1/project_1.runs/impl_1/counter_unit.tcl"
+  variable script "C:/Users/hicha/OneDrive/Bureau/Maformation/FormationAJC/Tp/TP2 compteur+led/project_1/project_1.runs/impl_1/counter_unit.tcl"
   variable category "vivado_impl"
 }
 
@@ -115,7 +115,6 @@ proc step_failed { step } {
 OPTRACE "impl_1" END { }
 }
 
-set_msg_config -id {Common 17-41} -limit 10000000
 
 OPTRACE "impl_1" START { ROLLUP_1 }
 OPTRACE "Phase: Write Bitstream" START { ROLLUP_AUTO }
@@ -126,7 +125,7 @@ set rc [catch {
   create_msg_db write_bitstream.pb
   set_param chipscope.maxJobs 2
   open_checkpoint counter_unit_routed.dcp
-  set_property webtalk.parent_dir C:/Users/hicha/OneDrive/Bureau/tp2/project_1/project_1.cache/wt [current_project]
+  set_property webtalk.parent_dir {C:/Users/hicha/OneDrive/Bureau/Maformation/FormationAJC/Tp/TP2 compteur+led/project_1/project_1.cache/wt} [current_project]
 set_property TOP counter_unit [current_fileset]
 OPTRACE "read constraints: write_bitstream" START { }
 OPTRACE "read constraints: write_bitstream" END { }
