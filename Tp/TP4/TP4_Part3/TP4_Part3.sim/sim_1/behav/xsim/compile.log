@@ -1,0 +1,8 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/hicha/OneDrive/Bureau/TP4/TP4_Part3/Counter_unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'counter_unit'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/hicha/OneDrive/Bureau/TP4/TP4_Part3/LedDriver.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'LedDriver'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/hicha/OneDrive/Bureau/TP4/TP4_Part3/PilotageLED_Avec_Module_LedDriver.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'PilotageLED_Avec_Module_LedDriver'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/hicha/OneDrive/Bureau/TP4/TP4_Part3/tb_PilotageLED_Avec_Module_LedDriver.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_PilotageLED_Avec_Module_LedDriver'

@@ -1,0 +1,4 @@
+ERROR: Exception caught trying to open file C:\Users\hicha\OneDrive\Bureau\TP4\TP4_Part3\TP4_Part3.runs\synth_1/runme.log
+	Exception name: Error
+	Exception error code: 70
+	Exception message: Permission refusée

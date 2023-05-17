@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon May 15 11:57:52 2023
+# Process ID: 6892
+# Current directory: C:/Users/hicha/OneDrive/Bureau/TP4/TP4.runs/synth_1
+# Command line: vivado.exe -log TP4_FSM.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source TP4_FSM.tcl
+# Log file: C:/Users/hicha/OneDrive/Bureau/TP4/TP4.runs/synth_1/TP4_FSM.vds
+# Journal file: C:/Users/hicha/OneDrive/Bureau/TP4/TP4.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source TP4_FSM.tcl -notrace

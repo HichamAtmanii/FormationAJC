@@ -1,0 +1,15 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Wed May 17 16:40:32 2023
+| Host         : LAPTOP-RHNTID5O running 64-bit major release  (build 9200)
+| Command      : report_bus_skew -warn_on_violation -file PilotageLED_Avec_Module_LedDriver_bus_skew_routed.rpt -pb PilotageLED_Avec_Module_LedDriver_bus_skew_routed.pb -rpx PilotageLED_Avec_Module_LedDriver_bus_skew_routed.rpx
+| Design       : PilotageLED_Avec_Module_LedDriver
+| Device       : 7z010-clg400
+| Speed File   : -1  PRODUCTION 1.12 2019-11-22
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Bus Skew Report
+
+No bus skew constraints
+

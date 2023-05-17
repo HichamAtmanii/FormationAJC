@@ -1,0 +1,1 @@
+-wto "e6d0622e05b84e9fb5fb2b7fef4028fd" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "tb_LedDriver_behav" "xil_defaultlib.tb_LedDriver" -log "elaborate.log" 

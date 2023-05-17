@@ -1,0 +1,8 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../Counter_unit.vhd" \
+"../../../../Tp4_FSM.vhdl" \
+"../../../../Tb_TP4_Fsm.vhdl" \
+
+# Do not sort compile order
+nosort

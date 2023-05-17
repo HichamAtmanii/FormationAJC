@@ -1,0 +1,39 @@
+
+*** Running vivado
+    with args -log TP4_FSM.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source TP4_FSM.tcl
+
+
+
+****** Vivado v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source TP4_FSM.tcl -notrace
+Command: synth_design -top TP4_FSM -part xc7z010clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 11464
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 999.109 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'TP4_FSM' [C:/Users/hicha/OneDrive/Bureau/TP4/Tp4_FSM.vhdl:15]
+INFO: [Synth 8-3491] module 'counter_unit' declared at 'C:/Users/hicha/OneDrive/Bureau/TP4/Counter_unit.vhd:6' bound to instance 'Compteur' of component 'Counter_unit' [C:/Users/hicha/OneDrive/Bureau/TP4/Tp4_FSM.vhdl:38]
+INFO: [Synth 8-638] synthesizing module 'counter_unit' [C:/Users/hicha/OneDrive/Bureau/TP4/Counter_unit.vhd:15]
+	Parameter Cst bound to: 20000000 - type: integer 
+ERROR: [Synth 8-3512] initialization value '0' out of range [C:/Users/hicha/OneDrive/Bureau/TP4/Counter_unit.vhd:19]
+ERROR: [Synth 8-285] failed synthesizing module 'counter_unit' [C:/Users/hicha/OneDrive/Bureau/TP4/Counter_unit.vhd:15]
+ERROR: [Synth 8-285] failed synthesizing module 'TP4_FSM' [C:/Users/hicha/OneDrive/Bureau/TP4/Tp4_FSM.vhdl:15]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 999.109 ; gain = 0.000
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+INFO: [Common 17-83] Releasing license: Synthesis
+9 Infos, 0 Warnings, 0 Critical Warnings and 4 Errors encountered.
+synth_design failed
+ERROR: [Common 17-69] Command failed: Synthesis failed - please see the console or run log file for details
+INFO: [Common 17-206] Exiting Vivado at Mon May 15 11:58:16 2023...

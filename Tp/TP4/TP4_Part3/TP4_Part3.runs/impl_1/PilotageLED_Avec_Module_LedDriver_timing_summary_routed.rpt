@@ -1,0 +1,1539 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Wed May 17 16:40:32 2023
+| Host         : LAPTOP-RHNTID5O running 64-bit major release  (build 9200)
+| Command      : report_timing_summary -max_paths 10 -file PilotageLED_Avec_Module_LedDriver_timing_summary_routed.rpt -pb PilotageLED_Avec_Module_LedDriver_timing_summary_routed.pb -rpx PilotageLED_Avec_Module_LedDriver_timing_summary_routed.rpx -warn_on_violation
+| Design       : PilotageLED_Avec_Module_LedDriver
+| Device       : 7z010-clg400
+| Speed File   : -1  PRODUCTION 1.12 2019-11-22
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Summary Report
+
+------------------------------------------------------------------------------------------------
+| Timer Settings
+| --------------
+------------------------------------------------------------------------------------------------
+
+  Enable Multi Corner Analysis               :  Yes
+  Enable Pessimism Removal                   :  Yes
+  Pessimism Removal Resolution               :  Nearest Common Node
+  Enable Input Delay Default Clock           :  No
+  Enable Preset / Clear Arcs                 :  No
+  Disable Flight Delays                      :  No
+  Ignore I/O Paths                           :  No
+  Timing Early Launch at Borrowing Latches   :  No
+  Borrow Time for Max Delay Exceptions       :  Yes
+  Merge Timing Exceptions                    :  Yes
+
+  Corner  Analyze    Analyze    
+  Name    Max Paths  Min Paths  
+  ------  ---------  ---------  
+  Slow    Yes        Yes        
+  Fast    Yes        Yes        
+
+
+
+check_timing report
+
+Table of Contents
+-----------------
+1. checking no_clock (0)
+2. checking constant_clock (0)
+3. checking pulse_width_clock (0)
+4. checking unconstrained_internal_endpoints (0)
+5. checking no_input_delay (3)
+6. checking no_output_delay (3)
+7. checking multiple_clock (0)
+8. checking generated_clocks (0)
+9. checking loops (0)
+10. checking partial_input_delay (0)
+11. checking partial_output_delay (0)
+12. checking latch_loops (0)
+
+1. checking no_clock (0)
+------------------------
+ There are 0 register/latch pins with no clock.
+
+
+2. checking constant_clock (0)
+------------------------------
+ There are 0 register/latch pins with constant_clock.
+
+
+3. checking pulse_width_clock (0)
+---------------------------------
+ There are 0 register/latch pins which need pulse_width check
+
+
+4. checking unconstrained_internal_endpoints (0)
+------------------------------------------------
+ There are 0 pins that are not constrained for maximum delay.
+
+ There are 0 pins that are not constrained for maximum delay due to constant clock.
+
+
+5. checking no_input_delay (3)
+------------------------------
+ There are 3 input ports with no input delay specified. (HIGH)
+
+ There are 0 input ports with no input delay but user has a false path constraint.
+
+
+6. checking no_output_delay (3)
+-------------------------------
+ There are 3 ports with no output delay specified. (HIGH)
+
+ There are 0 ports with no output delay but user has a false path constraint
+
+ There are 0 ports with no output delay but with a timing clock defined on it or propagating through it
+
+
+7. checking multiple_clock (0)
+------------------------------
+ There are 0 register/latch pins with multiple clocks.
+
+
+8. checking generated_clocks (0)
+--------------------------------
+ There are 0 generated clocks that are not connected to a clock source.
+
+
+9. checking loops (0)
+---------------------
+ There are 0 combinational loops in the design.
+
+
+10. checking partial_input_delay (0)
+------------------------------------
+ There are 0 input ports with partial input delay specified.
+
+
+11. checking partial_output_delay (0)
+-------------------------------------
+ There are 0 ports with partial output delay specified.
+
+
+12. checking latch_loops (0)
+----------------------------
+ There are 0 combinational latch loops in the design through latch input
+
+
+
+------------------------------------------------------------------------------------------------
+| Design Timing Summary
+| ---------------------
+------------------------------------------------------------------------------------------------
+
+    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+      3.410        0.000                      0                   32        0.156        0.000                      0                   32        3.500        0.000                       0                    36  
+
+
+All user specified timing constraints are met.
+
+
+------------------------------------------------------------------------------------------------
+| Clock Summary
+| -------------
+------------------------------------------------------------------------------------------------
+
+Clock        Waveform(ns)         Period(ns)      Frequency(MHz)
+-----        ------------         ----------      --------------
+sys_clk_pin  {0.000 4.000}        8.000           125.000         
+
+
+------------------------------------------------------------------------------------------------
+| Intra Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+Clock             WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+-----             -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+sys_clk_pin         3.410        0.000                      0                   32        0.156        0.000                      0                   32        3.500        0.000                       0                    36  
+
+
+------------------------------------------------------------------------------------------------
+| Inter Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Other Path Groups Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    ----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Timing Details
+| --------------
+------------------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  sys_clk_pin
+  To Clock:  sys_clk_pin
+
+Setup :            0  Failing Endpoints,  Worst Slack        3.410ns,  Total Violation        0.000ns
+Hold  :            0  Failing Endpoints,  Worst Slack        0.156ns,  Total Violation        0.000ns
+PW    :            0  Failing Endpoints,  Worst Slack        3.500ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             3.410ns  (required time - arrival time)
+  Source:                 Compteur/Compteur/D_out_reg[15]/C
+                            (rising edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            Compteur/Compteur/D_out_reg[25]/D
+                            (rising edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            8.000ns  (sys_clk_pin rise@8.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        4.590ns  (logic 2.134ns (46.488%)  route 2.456ns (53.511%))
+  Logic Levels:           9  (CARRY4=7 LUT6=2)
+  Clock Path Skew:        -0.026ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.909ns = ( 12.909 - 8.000 ) 
+    Source Clock Delay      (SCD):    5.363ns
+    Clock Pessimism Removal (CPR):    0.429ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    H16                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    H16                  IBUF (Prop_ibuf_I_O)         1.457     1.457 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           2.076     3.533    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     3.634 r  clk_IBUF_BUFG_inst/O
+                         net (fo=35, routed)          1.729     5.363    Compteur/Compteur/CLK
+    SLICE_X43Y68         FDCE                                         r  Compteur/Compteur/D_out_reg[15]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X43Y68         FDCE (Prop_fdce_C_Q)         0.456     5.819 f  Compteur/Compteur/D_out_reg[15]/Q
+                         net (fo=2, routed)           1.003     6.822    Compteur/Compteur/D_out_reg[15]
+    SLICE_X42Y69         LUT6 (Prop_lut6_I4_O)        0.124     6.946 f  Compteur/Compteur/current_state_i_5/O
+                         net (fo=29, routed)          1.264     8.209    Compteur/Compteur/current_state_i_5_n_0
+    SLICE_X42Y65         LUT6 (Prop_lut6_I3_O)        0.124     8.333 r  Compteur/Compteur/D_out[0]_i_2/O
+                         net (fo=1, routed)           0.190     8.524    Compteur/Compteur/D_out[0]_i_2_n_0
+    SLICE_X43Y65         CARRY4 (Prop_carry4_DI[0]_CO[3])
+                                                      0.526     9.050 r  Compteur/Compteur/D_out_reg[0]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     9.050    Compteur/Compteur/D_out_reg[0]_i_1_n_0
+    SLICE_X43Y66         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     9.164 r  Compteur/Compteur/D_out_reg[4]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     9.164    Compteur/Compteur/D_out_reg[4]_i_1_n_0
+    SLICE_X43Y67         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     9.278 r  Compteur/Compteur/D_out_reg[8]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     9.278    Compteur/Compteur/D_out_reg[8]_i_1_n_0
+    SLICE_X43Y68         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     9.392 r  Compteur/Compteur/D_out_reg[12]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     9.392    Compteur/Compteur/D_out_reg[12]_i_1_n_0
+    SLICE_X43Y69         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     9.506 r  Compteur/Compteur/D_out_reg[16]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     9.506    Compteur/Compteur/D_out_reg[16]_i_1_n_0
+    SLICE_X43Y70         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     9.620 r  Compteur/Compteur/D_out_reg[20]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     9.620    Compteur/Compteur/D_out_reg[20]_i_1_n_0
+    SLICE_X43Y71         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.334     9.954 r  Compteur/Compteur/D_out_reg[24]_i_1/O[1]
+                         net (fo=1, routed)           0.000     9.954    Compteur/Compteur/D_out_reg[24]_i_1_n_6
+    SLICE_X43Y71         FDCE                                         r  Compteur/Compteur/D_out_reg[25]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      8.000     8.000 r  
+    H16                                               0.000     8.000 r  clk (IN)
+                         net (fo=0)                   0.000     8.000    clk
+    H16                  IBUF (Prop_ibuf_I_O)         1.387     9.387 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.880    11.267    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    11.358 r  clk_IBUF_BUFG_inst/O
+                         net (fo=35, routed)          1.551    12.909    Compteur/Compteur/CLK
+    SLICE_X43Y71         FDCE                                         r  Compteur/Compteur/D_out_reg[25]/C
+                         clock pessimism              0.429    13.337    
+                         clock uncertainty           -0.035    13.302    
+    SLICE_X43Y71         FDCE (Setup_fdce_C_D)        0.062    13.364    Compteur/Compteur/D_out_reg[25]
+  -------------------------------------------------------------------
+                         required time                         13.364    
+                         arrival time                          -9.954    
+  -------------------------------------------------------------------
+                         slack                                  3.410    
+
+Slack (MET) :             3.505ns  (required time - arrival time)
+  Source:                 Compteur/Compteur/D_out_reg[15]/C
+                            (rising edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            Compteur/Compteur/D_out_reg[26]/D
+                            (rising edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            8.000ns  (sys_clk_pin rise@8.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        4.495ns  (logic 2.039ns (45.358%)  route 2.456ns (54.642%))
+  Logic Levels:           9  (CARRY4=7 LUT6=2)
+  Clock Path Skew:        -0.026ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.909ns = ( 12.909 - 8.000 ) 
+    Source Clock Delay      (SCD):    5.363ns
+    Clock Pessimism Removal (CPR):    0.429ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    H16                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    H16                  IBUF (Prop_ibuf_I_O)         1.457     1.457 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           2.076     3.533    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     3.634 r  clk_IBUF_BUFG_inst/O
+                         net (fo=35, routed)          1.729     5.363    Compteur/Compteur/CLK
+    SLICE_X43Y68         FDCE                                         r  Compteur/Compteur/D_out_reg[15]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X43Y68         FDCE (Prop_fdce_C_Q)         0.456     5.819 f  Compteur/Compteur/D_out_reg[15]/Q
+                         net (fo=2, routed)           1.003     6.822    Compteur/Compteur/D_out_reg[15]
+    SLICE_X42Y69         LUT6 (Prop_lut6_I4_O)        0.124     6.946 f  Compteur/Compteur/current_state_i_5/O
+                         net (fo=29, routed)          1.264     8.209    Compteur/Compteur/current_state_i_5_n_0
+    SLICE_X42Y65         LUT6 (Prop_lut6_I3_O)        0.124     8.333 r  Compteur/Compteur/D_out[0]_i_2/O
+                         net (fo=1, routed)           0.190     8.524    Compteur/Compteur/D_out[0]_i_2_n_0
+    SLICE_X43Y65         CARRY4 (Prop_carry4_DI[0]_CO[3])
+                                                      0.526     9.050 r  Compteur/Compteur/D_out_reg[0]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     9.050    Compteur/Compteur/D_out_reg[0]_i_1_n_0
+    SLICE_X43Y66         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     9.164 r  Compteur/Compteur/D_out_reg[4]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     9.164    Compteur/Compteur/D_out_reg[4]_i_1_n_0
+    SLICE_X43Y67         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     9.278 r  Compteur/Compteur/D_out_reg[8]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     9.278    Compteur/Compteur/D_out_reg[8]_i_1_n_0
+    SLICE_X43Y68         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     9.392 r  Compteur/Compteur/D_out_reg[12]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     9.392    Compteur/Compteur/D_out_reg[12]_i_1_n_0
+    SLICE_X43Y69         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     9.506 r  Compteur/Compteur/D_out_reg[16]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     9.506    Compteur/Compteur/D_out_reg[16]_i_1_n_0
+    SLICE_X43Y70         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     9.620 r  Compteur/Compteur/D_out_reg[20]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     9.620    Compteur/Compteur/D_out_reg[20]_i_1_n_0
+    SLICE_X43Y71         CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.239     9.859 r  Compteur/Compteur/D_out_reg[24]_i_1/O[2]
+                         net (fo=1, routed)           0.000     9.859    Compteur/Compteur/D_out_reg[24]_i_1_n_5
+    SLICE_X43Y71         FDCE                                         r  Compteur/Compteur/D_out_reg[26]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      8.000     8.000 r  
+    H16                                               0.000     8.000 r  clk (IN)
+                         net (fo=0)                   0.000     8.000    clk
+    H16                  IBUF (Prop_ibuf_I_O)         1.387     9.387 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.880    11.267    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    11.358 r  clk_IBUF_BUFG_inst/O
+                         net (fo=35, routed)          1.551    12.909    Compteur/Compteur/CLK
+    SLICE_X43Y71         FDCE                                         r  Compteur/Compteur/D_out_reg[26]/C
+                         clock pessimism              0.429    13.337    
+                         clock uncertainty           -0.035    13.302    
+    SLICE_X43Y71         FDCE (Setup_fdce_C_D)        0.062    13.364    Compteur/Compteur/D_out_reg[26]
+  -------------------------------------------------------------------
+                         required time                         13.364    
+                         arrival time                          -9.859    
+  -------------------------------------------------------------------
+                         slack                                  3.505    
+
+Slack (MET) :             3.521ns  (required time - arrival time)
+  Source:                 Compteur/Compteur/D_out_reg[15]/C
+                            (rising edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            Compteur/Compteur/D_out_reg[24]/D
+                            (rising edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            8.000ns  (sys_clk_pin rise@8.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        4.479ns  (logic 2.023ns (45.162%)  route 2.456ns (54.837%))
+  Logic Levels:           9  (CARRY4=7 LUT6=2)
+  Clock Path Skew:        -0.026ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.909ns = ( 12.909 - 8.000 ) 
+    Source Clock Delay      (SCD):    5.363ns
+    Clock Pessimism Removal (CPR):    0.429ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    H16                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    H16                  IBUF (Prop_ibuf_I_O)         1.457     1.457 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           2.076     3.533    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     3.634 r  clk_IBUF_BUFG_inst/O
+                         net (fo=35, routed)          1.729     5.363    Compteur/Compteur/CLK
+    SLICE_X43Y68         FDCE                                         r  Compteur/Compteur/D_out_reg[15]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X43Y68         FDCE (Prop_fdce_C_Q)         0.456     5.819 f  Compteur/Compteur/D_out_reg[15]/Q
+                         net (fo=2, routed)           1.003     6.822    Compteur/Compteur/D_out_reg[15]
+    SLICE_X42Y69         LUT6 (Prop_lut6_I4_O)        0.124     6.946 f  Compteur/Compteur/current_state_i_5/O
+                         net (fo=29, routed)          1.264     8.209    Compteur/Compteur/current_state_i_5_n_0
+    SLICE_X42Y65         LUT6 (Prop_lut6_I3_O)        0.124     8.333 r  Compteur/Compteur/D_out[0]_i_2/O
+                         net (fo=1, routed)           0.190     8.524    Compteur/Compteur/D_out[0]_i_2_n_0
+    SLICE_X43Y65         CARRY4 (Prop_carry4_DI[0]_CO[3])
+                                                      0.526     9.050 r  Compteur/Compteur/D_out_reg[0]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     9.050    Compteur/Compteur/D_out_reg[0]_i_1_n_0
+    SLICE_X43Y66         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     9.164 r  Compteur/Compteur/D_out_reg[4]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     9.164    Compteur/Compteur/D_out_reg[4]_i_1_n_0
+    SLICE_X43Y67         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     9.278 r  Compteur/Compteur/D_out_reg[8]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     9.278    Compteur/Compteur/D_out_reg[8]_i_1_n_0
+    SLICE_X43Y68         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     9.392 r  Compteur/Compteur/D_out_reg[12]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     9.392    Compteur/Compteur/D_out_reg[12]_i_1_n_0
+    SLICE_X43Y69         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     9.506 r  Compteur/Compteur/D_out_reg[16]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     9.506    Compteur/Compteur/D_out_reg[16]_i_1_n_0
+    SLICE_X43Y70         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     9.620 r  Compteur/Compteur/D_out_reg[20]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     9.620    Compteur/Compteur/D_out_reg[20]_i_1_n_0
+    SLICE_X43Y71         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.223     9.843 r  Compteur/Compteur/D_out_reg[24]_i_1/O[0]
+                         net (fo=1, routed)           0.000     9.843    Compteur/Compteur/D_out_reg[24]_i_1_n_7
+    SLICE_X43Y71         FDCE                                         r  Compteur/Compteur/D_out_reg[24]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      8.000     8.000 r  
+    H16                                               0.000     8.000 r  clk (IN)
+                         net (fo=0)                   0.000     8.000    clk
+    H16                  IBUF (Prop_ibuf_I_O)         1.387     9.387 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.880    11.267    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    11.358 r  clk_IBUF_BUFG_inst/O
+                         net (fo=35, routed)          1.551    12.909    Compteur/Compteur/CLK
+    SLICE_X43Y71         FDCE                                         r  Compteur/Compteur/D_out_reg[24]/C
+                         clock pessimism              0.429    13.337    
+                         clock uncertainty           -0.035    13.302    
+    SLICE_X43Y71         FDCE (Setup_fdce_C_D)        0.062    13.364    Compteur/Compteur/D_out_reg[24]
+  -------------------------------------------------------------------
+                         required time                         13.364    
+                         arrival time                          -9.843    
+  -------------------------------------------------------------------
+                         slack                                  3.521    
+
+Slack (MET) :             3.525ns  (required time - arrival time)
+  Source:                 Compteur/Compteur/D_out_reg[15]/C
+                            (rising edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            Compteur/Compteur/D_out_reg[21]/D
+                            (rising edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            8.000ns  (sys_clk_pin rise@8.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        4.476ns  (logic 2.020ns (45.126%)  route 2.456ns (54.874%))
+  Logic Levels:           8  (CARRY4=6 LUT6=2)
+  Clock Path Skew:        -0.025ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.910ns = ( 12.910 - 8.000 ) 
+    Source Clock Delay      (SCD):    5.363ns
+    Clock Pessimism Removal (CPR):    0.429ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    H16                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    H16                  IBUF (Prop_ibuf_I_O)         1.457     1.457 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           2.076     3.533    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     3.634 r  clk_IBUF_BUFG_inst/O
+                         net (fo=35, routed)          1.729     5.363    Compteur/Compteur/CLK
+    SLICE_X43Y68         FDCE                                         r  Compteur/Compteur/D_out_reg[15]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X43Y68         FDCE (Prop_fdce_C_Q)         0.456     5.819 f  Compteur/Compteur/D_out_reg[15]/Q
+                         net (fo=2, routed)           1.003     6.822    Compteur/Compteur/D_out_reg[15]
+    SLICE_X42Y69         LUT6 (Prop_lut6_I4_O)        0.124     6.946 f  Compteur/Compteur/current_state_i_5/O
+                         net (fo=29, routed)          1.264     8.209    Compteur/Compteur/current_state_i_5_n_0
+    SLICE_X42Y65         LUT6 (Prop_lut6_I3_O)        0.124     8.333 r  Compteur/Compteur/D_out[0]_i_2/O
+                         net (fo=1, routed)           0.190     8.524    Compteur/Compteur/D_out[0]_i_2_n_0
+    SLICE_X43Y65         CARRY4 (Prop_carry4_DI[0]_CO[3])
+                                                      0.526     9.050 r  Compteur/Compteur/D_out_reg[0]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     9.050    Compteur/Compteur/D_out_reg[0]_i_1_n_0
+    SLICE_X43Y66         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     9.164 r  Compteur/Compteur/D_out_reg[4]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     9.164    Compteur/Compteur/D_out_reg[4]_i_1_n_0
+    SLICE_X43Y67         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     9.278 r  Compteur/Compteur/D_out_reg[8]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     9.278    Compteur/Compteur/D_out_reg[8]_i_1_n_0
+    SLICE_X43Y68         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     9.392 r  Compteur/Compteur/D_out_reg[12]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     9.392    Compteur/Compteur/D_out_reg[12]_i_1_n_0
+    SLICE_X43Y69         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     9.506 r  Compteur/Compteur/D_out_reg[16]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     9.506    Compteur/Compteur/D_out_reg[16]_i_1_n_0
+    SLICE_X43Y70         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.334     9.840 r  Compteur/Compteur/D_out_reg[20]_i_1/O[1]
+                         net (fo=1, routed)           0.000     9.840    Compteur/Compteur/D_out_reg[20]_i_1_n_6
+    SLICE_X43Y70         FDCE                                         r  Compteur/Compteur/D_out_reg[21]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      8.000     8.000 r  
+    H16                                               0.000     8.000 r  clk (IN)
+                         net (fo=0)                   0.000     8.000    clk
+    H16                  IBUF (Prop_ibuf_I_O)         1.387     9.387 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.880    11.267    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    11.358 r  clk_IBUF_BUFG_inst/O
+                         net (fo=35, routed)          1.552    12.910    Compteur/Compteur/CLK
+    SLICE_X43Y70         FDCE                                         r  Compteur/Compteur/D_out_reg[21]/C
+                         clock pessimism              0.429    13.338    
+                         clock uncertainty           -0.035    13.303    
+    SLICE_X43Y70         FDCE (Setup_fdce_C_D)        0.062    13.365    Compteur/Compteur/D_out_reg[21]
+  -------------------------------------------------------------------
+                         required time                         13.365    
+                         arrival time                          -9.840    
+  -------------------------------------------------------------------
+                         slack                                  3.525    
+
+Slack (MET) :             3.546ns  (required time - arrival time)
+  Source:                 Compteur/Compteur/D_out_reg[15]/C
+                            (rising edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            Compteur/Compteur/D_out_reg[23]/D
+                            (rising edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            8.000ns  (sys_clk_pin rise@8.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        4.455ns  (logic 1.999ns (44.867%)  route 2.456ns (55.133%))
+  Logic Levels:           8  (CARRY4=6 LUT6=2)
+  Clock Path Skew:        -0.025ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.910ns = ( 12.910 - 8.000 ) 
+    Source Clock Delay      (SCD):    5.363ns
+    Clock Pessimism Removal (CPR):    0.429ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    H16                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    H16                  IBUF (Prop_ibuf_I_O)         1.457     1.457 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           2.076     3.533    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     3.634 r  clk_IBUF_BUFG_inst/O
+                         net (fo=35, routed)          1.729     5.363    Compteur/Compteur/CLK
+    SLICE_X43Y68         FDCE                                         r  Compteur/Compteur/D_out_reg[15]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X43Y68         FDCE (Prop_fdce_C_Q)         0.456     5.819 f  Compteur/Compteur/D_out_reg[15]/Q
+                         net (fo=2, routed)           1.003     6.822    Compteur/Compteur/D_out_reg[15]
+    SLICE_X42Y69         LUT6 (Prop_lut6_I4_O)        0.124     6.946 f  Compteur/Compteur/current_state_i_5/O
+                         net (fo=29, routed)          1.264     8.209    Compteur/Compteur/current_state_i_5_n_0
+    SLICE_X42Y65         LUT6 (Prop_lut6_I3_O)        0.124     8.333 r  Compteur/Compteur/D_out[0]_i_2/O
+                         net (fo=1, routed)           0.190     8.524    Compteur/Compteur/D_out[0]_i_2_n_0
+    SLICE_X43Y65         CARRY4 (Prop_carry4_DI[0]_CO[3])
+                                                      0.526     9.050 r  Compteur/Compteur/D_out_reg[0]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     9.050    Compteur/Compteur/D_out_reg[0]_i_1_n_0
+    SLICE_X43Y66         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     9.164 r  Compteur/Compteur/D_out_reg[4]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     9.164    Compteur/Compteur/D_out_reg[4]_i_1_n_0
+    SLICE_X43Y67         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     9.278 r  Compteur/Compteur/D_out_reg[8]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     9.278    Compteur/Compteur/D_out_reg[8]_i_1_n_0
+    SLICE_X43Y68         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     9.392 r  Compteur/Compteur/D_out_reg[12]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     9.392    Compteur/Compteur/D_out_reg[12]_i_1_n_0
+    SLICE_X43Y69         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     9.506 r  Compteur/Compteur/D_out_reg[16]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     9.506    Compteur/Compteur/D_out_reg[16]_i_1_n_0
+    SLICE_X43Y70         CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.313     9.819 r  Compteur/Compteur/D_out_reg[20]_i_1/O[3]
+                         net (fo=1, routed)           0.000     9.819    Compteur/Compteur/D_out_reg[20]_i_1_n_4
+    SLICE_X43Y70         FDCE                                         r  Compteur/Compteur/D_out_reg[23]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      8.000     8.000 r  
+    H16                                               0.000     8.000 r  clk (IN)
+                         net (fo=0)                   0.000     8.000    clk
+    H16                  IBUF (Prop_ibuf_I_O)         1.387     9.387 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.880    11.267    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    11.358 r  clk_IBUF_BUFG_inst/O
+                         net (fo=35, routed)          1.552    12.910    Compteur/Compteur/CLK
+    SLICE_X43Y70         FDCE                                         r  Compteur/Compteur/D_out_reg[23]/C
+                         clock pessimism              0.429    13.338    
+                         clock uncertainty           -0.035    13.303    
+    SLICE_X43Y70         FDCE (Setup_fdce_C_D)        0.062    13.365    Compteur/Compteur/D_out_reg[23]
+  -------------------------------------------------------------------
+                         required time                         13.365    
+                         arrival time                          -9.819    
+  -------------------------------------------------------------------
+                         slack                                  3.546    
+
+Slack (MET) :             3.620ns  (required time - arrival time)
+  Source:                 Compteur/Compteur/D_out_reg[15]/C
+                            (rising edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            Compteur/Compteur/D_out_reg[22]/D
+                            (rising edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            8.000ns  (sys_clk_pin rise@8.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        4.381ns  (logic 1.925ns (43.936%)  route 2.456ns (56.064%))
+  Logic Levels:           8  (CARRY4=6 LUT6=2)
+  Clock Path Skew:        -0.025ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.910ns = ( 12.910 - 8.000 ) 
+    Source Clock Delay      (SCD):    5.363ns
+    Clock Pessimism Removal (CPR):    0.429ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    H16                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    H16                  IBUF (Prop_ibuf_I_O)         1.457     1.457 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           2.076     3.533    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     3.634 r  clk_IBUF_BUFG_inst/O
+                         net (fo=35, routed)          1.729     5.363    Compteur/Compteur/CLK
+    SLICE_X43Y68         FDCE                                         r  Compteur/Compteur/D_out_reg[15]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X43Y68         FDCE (Prop_fdce_C_Q)         0.456     5.819 f  Compteur/Compteur/D_out_reg[15]/Q
+                         net (fo=2, routed)           1.003     6.822    Compteur/Compteur/D_out_reg[15]
+    SLICE_X42Y69         LUT6 (Prop_lut6_I4_O)        0.124     6.946 f  Compteur/Compteur/current_state_i_5/O
+                         net (fo=29, routed)          1.264     8.209    Compteur/Compteur/current_state_i_5_n_0
+    SLICE_X42Y65         LUT6 (Prop_lut6_I3_O)        0.124     8.333 r  Compteur/Compteur/D_out[0]_i_2/O
+                         net (fo=1, routed)           0.190     8.524    Compteur/Compteur/D_out[0]_i_2_n_0
+    SLICE_X43Y65         CARRY4 (Prop_carry4_DI[0]_CO[3])
+                                                      0.526     9.050 r  Compteur/Compteur/D_out_reg[0]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     9.050    Compteur/Compteur/D_out_reg[0]_i_1_n_0
+    SLICE_X43Y66         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     9.164 r  Compteur/Compteur/D_out_reg[4]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     9.164    Compteur/Compteur/D_out_reg[4]_i_1_n_0
+    SLICE_X43Y67         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     9.278 r  Compteur/Compteur/D_out_reg[8]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     9.278    Compteur/Compteur/D_out_reg[8]_i_1_n_0
+    SLICE_X43Y68         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     9.392 r  Compteur/Compteur/D_out_reg[12]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     9.392    Compteur/Compteur/D_out_reg[12]_i_1_n_0
+    SLICE_X43Y69         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     9.506 r  Compteur/Compteur/D_out_reg[16]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     9.506    Compteur/Compteur/D_out_reg[16]_i_1_n_0
+    SLICE_X43Y70         CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.239     9.745 r  Compteur/Compteur/D_out_reg[20]_i_1/O[2]
+                         net (fo=1, routed)           0.000     9.745    Compteur/Compteur/D_out_reg[20]_i_1_n_5
+    SLICE_X43Y70         FDCE                                         r  Compteur/Compteur/D_out_reg[22]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      8.000     8.000 r  
+    H16                                               0.000     8.000 r  clk (IN)
+                         net (fo=0)                   0.000     8.000    clk
+    H16                  IBUF (Prop_ibuf_I_O)         1.387     9.387 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.880    11.267    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    11.358 r  clk_IBUF_BUFG_inst/O
+                         net (fo=35, routed)          1.552    12.910    Compteur/Compteur/CLK
+    SLICE_X43Y70         FDCE                                         r  Compteur/Compteur/D_out_reg[22]/C
+                         clock pessimism              0.429    13.338    
+                         clock uncertainty           -0.035    13.303    
+    SLICE_X43Y70         FDCE (Setup_fdce_C_D)        0.062    13.365    Compteur/Compteur/D_out_reg[22]
+  -------------------------------------------------------------------
+                         required time                         13.365    
+                         arrival time                          -9.745    
+  -------------------------------------------------------------------
+                         slack                                  3.620    
+
+Slack (MET) :             3.636ns  (required time - arrival time)
+  Source:                 Compteur/Compteur/D_out_reg[15]/C
+                            (rising edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            Compteur/Compteur/D_out_reg[20]/D
+                            (rising edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            8.000ns  (sys_clk_pin rise@8.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        4.365ns  (logic 1.909ns (43.730%)  route 2.456ns (56.270%))
+  Logic Levels:           8  (CARRY4=6 LUT6=2)
+  Clock Path Skew:        -0.025ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.910ns = ( 12.910 - 8.000 ) 
+    Source Clock Delay      (SCD):    5.363ns
+    Clock Pessimism Removal (CPR):    0.429ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    H16                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    H16                  IBUF (Prop_ibuf_I_O)         1.457     1.457 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           2.076     3.533    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     3.634 r  clk_IBUF_BUFG_inst/O
+                         net (fo=35, routed)          1.729     5.363    Compteur/Compteur/CLK
+    SLICE_X43Y68         FDCE                                         r  Compteur/Compteur/D_out_reg[15]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X43Y68         FDCE (Prop_fdce_C_Q)         0.456     5.819 f  Compteur/Compteur/D_out_reg[15]/Q
+                         net (fo=2, routed)           1.003     6.822    Compteur/Compteur/D_out_reg[15]
+    SLICE_X42Y69         LUT6 (Prop_lut6_I4_O)        0.124     6.946 f  Compteur/Compteur/current_state_i_5/O
+                         net (fo=29, routed)          1.264     8.209    Compteur/Compteur/current_state_i_5_n_0
+    SLICE_X42Y65         LUT6 (Prop_lut6_I3_O)        0.124     8.333 r  Compteur/Compteur/D_out[0]_i_2/O
+                         net (fo=1, routed)           0.190     8.524    Compteur/Compteur/D_out[0]_i_2_n_0
+    SLICE_X43Y65         CARRY4 (Prop_carry4_DI[0]_CO[3])
+                                                      0.526     9.050 r  Compteur/Compteur/D_out_reg[0]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     9.050    Compteur/Compteur/D_out_reg[0]_i_1_n_0
+    SLICE_X43Y66         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     9.164 r  Compteur/Compteur/D_out_reg[4]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     9.164    Compteur/Compteur/D_out_reg[4]_i_1_n_0
+    SLICE_X43Y67         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     9.278 r  Compteur/Compteur/D_out_reg[8]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     9.278    Compteur/Compteur/D_out_reg[8]_i_1_n_0
+    SLICE_X43Y68         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     9.392 r  Compteur/Compteur/D_out_reg[12]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     9.392    Compteur/Compteur/D_out_reg[12]_i_1_n_0
+    SLICE_X43Y69         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     9.506 r  Compteur/Compteur/D_out_reg[16]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     9.506    Compteur/Compteur/D_out_reg[16]_i_1_n_0
+    SLICE_X43Y70         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.223     9.729 r  Compteur/Compteur/D_out_reg[20]_i_1/O[0]
+                         net (fo=1, routed)           0.000     9.729    Compteur/Compteur/D_out_reg[20]_i_1_n_7
+    SLICE_X43Y70         FDCE                                         r  Compteur/Compteur/D_out_reg[20]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      8.000     8.000 r  
+    H16                                               0.000     8.000 r  clk (IN)
+                         net (fo=0)                   0.000     8.000    clk
+    H16                  IBUF (Prop_ibuf_I_O)         1.387     9.387 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.880    11.267    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    11.358 r  clk_IBUF_BUFG_inst/O
+                         net (fo=35, routed)          1.552    12.910    Compteur/Compteur/CLK
+    SLICE_X43Y70         FDCE                                         r  Compteur/Compteur/D_out_reg[20]/C
+                         clock pessimism              0.429    13.338    
+                         clock uncertainty           -0.035    13.303    
+    SLICE_X43Y70         FDCE (Setup_fdce_C_D)        0.062    13.365    Compteur/Compteur/D_out_reg[20]
+  -------------------------------------------------------------------
+                         required time                         13.365    
+                         arrival time                          -9.729    
+  -------------------------------------------------------------------
+                         slack                                  3.636    
+
+Slack (MET) :             3.639ns  (required time - arrival time)
+  Source:                 Compteur/Compteur/D_out_reg[15]/C
+                            (rising edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            Compteur/Compteur/D_out_reg[17]/D
+                            (rising edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            8.000ns  (sys_clk_pin rise@8.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        4.362ns  (logic 1.906ns (43.692%)  route 2.456ns (56.308%))
+  Logic Levels:           7  (CARRY4=5 LUT6=2)
+  Clock Path Skew:        -0.025ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.910ns = ( 12.910 - 8.000 ) 
+    Source Clock Delay      (SCD):    5.363ns
+    Clock Pessimism Removal (CPR):    0.429ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    H16                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    H16                  IBUF (Prop_ibuf_I_O)         1.457     1.457 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           2.076     3.533    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     3.634 r  clk_IBUF_BUFG_inst/O
+                         net (fo=35, routed)          1.729     5.363    Compteur/Compteur/CLK
+    SLICE_X43Y68         FDCE                                         r  Compteur/Compteur/D_out_reg[15]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X43Y68         FDCE (Prop_fdce_C_Q)         0.456     5.819 f  Compteur/Compteur/D_out_reg[15]/Q
+                         net (fo=2, routed)           1.003     6.822    Compteur/Compteur/D_out_reg[15]
+    SLICE_X42Y69         LUT6 (Prop_lut6_I4_O)        0.124     6.946 f  Compteur/Compteur/current_state_i_5/O
+                         net (fo=29, routed)          1.264     8.209    Compteur/Compteur/current_state_i_5_n_0
+    SLICE_X42Y65         LUT6 (Prop_lut6_I3_O)        0.124     8.333 r  Compteur/Compteur/D_out[0]_i_2/O
+                         net (fo=1, routed)           0.190     8.524    Compteur/Compteur/D_out[0]_i_2_n_0
+    SLICE_X43Y65         CARRY4 (Prop_carry4_DI[0]_CO[3])
+                                                      0.526     9.050 r  Compteur/Compteur/D_out_reg[0]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     9.050    Compteur/Compteur/D_out_reg[0]_i_1_n_0
+    SLICE_X43Y66         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     9.164 r  Compteur/Compteur/D_out_reg[4]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     9.164    Compteur/Compteur/D_out_reg[4]_i_1_n_0
+    SLICE_X43Y67         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     9.278 r  Compteur/Compteur/D_out_reg[8]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     9.278    Compteur/Compteur/D_out_reg[8]_i_1_n_0
+    SLICE_X43Y68         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     9.392 r  Compteur/Compteur/D_out_reg[12]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     9.392    Compteur/Compteur/D_out_reg[12]_i_1_n_0
+    SLICE_X43Y69         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.334     9.726 r  Compteur/Compteur/D_out_reg[16]_i_1/O[1]
+                         net (fo=1, routed)           0.000     9.726    Compteur/Compteur/D_out_reg[16]_i_1_n_6
+    SLICE_X43Y69         FDCE                                         r  Compteur/Compteur/D_out_reg[17]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      8.000     8.000 r  
+    H16                                               0.000     8.000 r  clk (IN)
+                         net (fo=0)                   0.000     8.000    clk
+    H16                  IBUF (Prop_ibuf_I_O)         1.387     9.387 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.880    11.267    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    11.358 r  clk_IBUF_BUFG_inst/O
+                         net (fo=35, routed)          1.552    12.910    Compteur/Compteur/CLK
+    SLICE_X43Y69         FDCE                                         r  Compteur/Compteur/D_out_reg[17]/C
+                         clock pessimism              0.429    13.338    
+                         clock uncertainty           -0.035    13.303    
+    SLICE_X43Y69         FDCE (Setup_fdce_C_D)        0.062    13.365    Compteur/Compteur/D_out_reg[17]
+  -------------------------------------------------------------------
+                         required time                         13.365    
+                         arrival time                          -9.726    
+  -------------------------------------------------------------------
+                         slack                                  3.639    
+
+Slack (MET) :             3.660ns  (required time - arrival time)
+  Source:                 Compteur/Compteur/D_out_reg[15]/C
+                            (rising edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            Compteur/Compteur/D_out_reg[19]/D
+                            (rising edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            8.000ns  (sys_clk_pin rise@8.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        4.341ns  (logic 1.885ns (43.419%)  route 2.456ns (56.581%))
+  Logic Levels:           7  (CARRY4=5 LUT6=2)
+  Clock Path Skew:        -0.025ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.910ns = ( 12.910 - 8.000 ) 
+    Source Clock Delay      (SCD):    5.363ns
+    Clock Pessimism Removal (CPR):    0.429ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    H16                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    H16                  IBUF (Prop_ibuf_I_O)         1.457     1.457 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           2.076     3.533    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     3.634 r  clk_IBUF_BUFG_inst/O
+                         net (fo=35, routed)          1.729     5.363    Compteur/Compteur/CLK
+    SLICE_X43Y68         FDCE                                         r  Compteur/Compteur/D_out_reg[15]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X43Y68         FDCE (Prop_fdce_C_Q)         0.456     5.819 f  Compteur/Compteur/D_out_reg[15]/Q
+                         net (fo=2, routed)           1.003     6.822    Compteur/Compteur/D_out_reg[15]
+    SLICE_X42Y69         LUT6 (Prop_lut6_I4_O)        0.124     6.946 f  Compteur/Compteur/current_state_i_5/O
+                         net (fo=29, routed)          1.264     8.209    Compteur/Compteur/current_state_i_5_n_0
+    SLICE_X42Y65         LUT6 (Prop_lut6_I3_O)        0.124     8.333 r  Compteur/Compteur/D_out[0]_i_2/O
+                         net (fo=1, routed)           0.190     8.524    Compteur/Compteur/D_out[0]_i_2_n_0
+    SLICE_X43Y65         CARRY4 (Prop_carry4_DI[0]_CO[3])
+                                                      0.526     9.050 r  Compteur/Compteur/D_out_reg[0]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     9.050    Compteur/Compteur/D_out_reg[0]_i_1_n_0
+    SLICE_X43Y66         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     9.164 r  Compteur/Compteur/D_out_reg[4]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     9.164    Compteur/Compteur/D_out_reg[4]_i_1_n_0
+    SLICE_X43Y67         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     9.278 r  Compteur/Compteur/D_out_reg[8]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     9.278    Compteur/Compteur/D_out_reg[8]_i_1_n_0
+    SLICE_X43Y68         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     9.392 r  Compteur/Compteur/D_out_reg[12]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     9.392    Compteur/Compteur/D_out_reg[12]_i_1_n_0
+    SLICE_X43Y69         CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.313     9.705 r  Compteur/Compteur/D_out_reg[16]_i_1/O[3]
+                         net (fo=1, routed)           0.000     9.705    Compteur/Compteur/D_out_reg[16]_i_1_n_4
+    SLICE_X43Y69         FDCE                                         r  Compteur/Compteur/D_out_reg[19]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      8.000     8.000 r  
+    H16                                               0.000     8.000 r  clk (IN)
+                         net (fo=0)                   0.000     8.000    clk
+    H16                  IBUF (Prop_ibuf_I_O)         1.387     9.387 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.880    11.267    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    11.358 r  clk_IBUF_BUFG_inst/O
+                         net (fo=35, routed)          1.552    12.910    Compteur/Compteur/CLK
+    SLICE_X43Y69         FDCE                                         r  Compteur/Compteur/D_out_reg[19]/C
+                         clock pessimism              0.429    13.338    
+                         clock uncertainty           -0.035    13.303    
+    SLICE_X43Y69         FDCE (Setup_fdce_C_D)        0.062    13.365    Compteur/Compteur/D_out_reg[19]
+  -------------------------------------------------------------------
+                         required time                         13.365    
+                         arrival time                          -9.705    
+  -------------------------------------------------------------------
+                         slack                                  3.660    
+
+Slack (MET) :             3.734ns  (required time - arrival time)
+  Source:                 Compteur/Compteur/D_out_reg[15]/C
+                            (rising edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            Compteur/Compteur/D_out_reg[18]/D
+                            (rising edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            8.000ns  (sys_clk_pin rise@8.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        4.267ns  (logic 1.811ns (42.438%)  route 2.456ns (57.562%))
+  Logic Levels:           7  (CARRY4=5 LUT6=2)
+  Clock Path Skew:        -0.025ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.910ns = ( 12.910 - 8.000 ) 
+    Source Clock Delay      (SCD):    5.363ns
+    Clock Pessimism Removal (CPR):    0.429ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    H16                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    H16                  IBUF (Prop_ibuf_I_O)         1.457     1.457 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           2.076     3.533    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     3.634 r  clk_IBUF_BUFG_inst/O
+                         net (fo=35, routed)          1.729     5.363    Compteur/Compteur/CLK
+    SLICE_X43Y68         FDCE                                         r  Compteur/Compteur/D_out_reg[15]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X43Y68         FDCE (Prop_fdce_C_Q)         0.456     5.819 f  Compteur/Compteur/D_out_reg[15]/Q
+                         net (fo=2, routed)           1.003     6.822    Compteur/Compteur/D_out_reg[15]
+    SLICE_X42Y69         LUT6 (Prop_lut6_I4_O)        0.124     6.946 f  Compteur/Compteur/current_state_i_5/O
+                         net (fo=29, routed)          1.264     8.209    Compteur/Compteur/current_state_i_5_n_0
+    SLICE_X42Y65         LUT6 (Prop_lut6_I3_O)        0.124     8.333 r  Compteur/Compteur/D_out[0]_i_2/O
+                         net (fo=1, routed)           0.190     8.524    Compteur/Compteur/D_out[0]_i_2_n_0
+    SLICE_X43Y65         CARRY4 (Prop_carry4_DI[0]_CO[3])
+                                                      0.526     9.050 r  Compteur/Compteur/D_out_reg[0]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     9.050    Compteur/Compteur/D_out_reg[0]_i_1_n_0
+    SLICE_X43Y66         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     9.164 r  Compteur/Compteur/D_out_reg[4]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     9.164    Compteur/Compteur/D_out_reg[4]_i_1_n_0
+    SLICE_X43Y67         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     9.278 r  Compteur/Compteur/D_out_reg[8]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     9.278    Compteur/Compteur/D_out_reg[8]_i_1_n_0
+    SLICE_X43Y68         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     9.392 r  Compteur/Compteur/D_out_reg[12]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     9.392    Compteur/Compteur/D_out_reg[12]_i_1_n_0
+    SLICE_X43Y69         CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.239     9.631 r  Compteur/Compteur/D_out_reg[16]_i_1/O[2]
+                         net (fo=1, routed)           0.000     9.631    Compteur/Compteur/D_out_reg[16]_i_1_n_5
+    SLICE_X43Y69         FDCE                                         r  Compteur/Compteur/D_out_reg[18]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      8.000     8.000 r  
+    H16                                               0.000     8.000 r  clk (IN)
+                         net (fo=0)                   0.000     8.000    clk
+    H16                  IBUF (Prop_ibuf_I_O)         1.387     9.387 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.880    11.267    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    11.358 r  clk_IBUF_BUFG_inst/O
+                         net (fo=35, routed)          1.552    12.910    Compteur/Compteur/CLK
+    SLICE_X43Y69         FDCE                                         r  Compteur/Compteur/D_out_reg[18]/C
+                         clock pessimism              0.429    13.338    
+                         clock uncertainty           -0.035    13.303    
+    SLICE_X43Y69         FDCE (Setup_fdce_C_D)        0.062    13.365    Compteur/Compteur/D_out_reg[18]
+  -------------------------------------------------------------------
+                         required time                         13.365    
+                         arrival time                          -9.631    
+  -------------------------------------------------------------------
+                         slack                                  3.734    
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.156ns  (arrival time - required time)
+  Source:                 Update_Registre2_reg/C
+                            (rising edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            Compteur/Data_Code_Couleur_reg[1]/D
+                            (rising edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.261ns  (logic 0.186ns (71.220%)  route 0.075ns (28.780%))
+  Logic Levels:           1  (LUT5=1)
+  Clock Path Skew:        0.013ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.974ns
+    Source Clock Delay      (SCD):    1.459ns
+    Clock Pessimism Removal (CPR):    0.502ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    H16                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    H16                  IBUF (Prop_ibuf_I_O)         0.225     0.225 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.627     0.852    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.878 r  clk_IBUF_BUFG_inst/O
+                         net (fo=35, routed)          0.581     1.459    clk_IBUF_BUFG
+    SLICE_X40Y68         FDCE                                         r  Update_Registre2_reg/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X40Y68         FDCE (Prop_fdce_C_Q)         0.141     1.600 r  Update_Registre2_reg/Q
+                         net (fo=3, routed)           0.075     1.675    Compteur/Compteur/Update_Registre2
+    SLICE_X41Y68         LUT5 (Prop_lut5_I3_O)        0.045     1.720 r  Compteur/Compteur/Data_Code_Couleur[1]_i_1/O
+                         net (fo=1, routed)           0.000     1.720    Compteur/Compteur_n_3
+    SLICE_X41Y68         FDCE                                         r  Compteur/Data_Code_Couleur_reg[1]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    H16                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    H16                  IBUF (Prop_ibuf_I_O)         0.413     0.413 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.683     1.096    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.125 r  clk_IBUF_BUFG_inst/O
+                         net (fo=35, routed)          0.849     1.974    Compteur/CLK
+    SLICE_X41Y68         FDCE                                         r  Compteur/Data_Code_Couleur_reg[1]/C
+                         clock pessimism             -0.502     1.472    
+    SLICE_X41Y68         FDCE (Hold_fdce_C_D)         0.092     1.564    Compteur/Data_Code_Couleur_reg[1]
+  -------------------------------------------------------------------
+                         required time                         -1.564    
+                         arrival time                           1.720    
+  -------------------------------------------------------------------
+                         slack                                  0.156    
+
+Slack (MET) :             0.242ns  (arrival time - required time)
+  Source:                 Update_Registre2_reg/C
+                            (rising edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            Compteur/Data_Code_Couleur_reg[2]/D
+                            (rising edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.347ns  (logic 0.186ns (53.577%)  route 0.161ns (46.423%))
+  Logic Levels:           1  (LUT5=1)
+  Clock Path Skew:        0.013ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.974ns
+    Source Clock Delay      (SCD):    1.459ns
+    Clock Pessimism Removal (CPR):    0.502ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    H16                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    H16                  IBUF (Prop_ibuf_I_O)         0.225     0.225 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.627     0.852    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.878 r  clk_IBUF_BUFG_inst/O
+                         net (fo=35, routed)          0.581     1.459    clk_IBUF_BUFG
+    SLICE_X40Y68         FDCE                                         r  Update_Registre2_reg/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X40Y68         FDCE (Prop_fdce_C_Q)         0.141     1.600 r  Update_Registre2_reg/Q
+                         net (fo=3, routed)           0.161     1.761    Compteur/Compteur/Update_Registre2
+    SLICE_X41Y68         LUT5 (Prop_lut5_I3_O)        0.045     1.806 r  Compteur/Compteur/Data_Code_Couleur[2]_i_1/O
+                         net (fo=1, routed)           0.000     1.806    Compteur/Compteur_n_1
+    SLICE_X41Y68         FDCE                                         r  Compteur/Data_Code_Couleur_reg[2]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    H16                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    H16                  IBUF (Prop_ibuf_I_O)         0.413     0.413 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.683     1.096    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.125 r  clk_IBUF_BUFG_inst/O
+                         net (fo=35, routed)          0.849     1.974    Compteur/CLK
+    SLICE_X41Y68         FDCE                                         r  Compteur/Data_Code_Couleur_reg[2]/C
+                         clock pessimism             -0.502     1.472    
+    SLICE_X41Y68         FDCE (Hold_fdce_C_D)         0.092     1.564    Compteur/Data_Code_Couleur_reg[2]
+  -------------------------------------------------------------------
+                         required time                         -1.564    
+                         arrival time                           1.806    
+  -------------------------------------------------------------------
+                         slack                                  0.242    
+
+Slack (MET) :             0.243ns  (arrival time - required time)
+  Source:                 Update_Registre1_reg/C
+                            (rising edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            Update_Registre2_reg/D
+                            (rising edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.313ns  (logic 0.141ns (45.034%)  route 0.172ns (54.966%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.974ns
+    Source Clock Delay      (SCD):    1.459ns
+    Clock Pessimism Removal (CPR):    0.515ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    H16                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    H16                  IBUF (Prop_ibuf_I_O)         0.225     0.225 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.627     0.852    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.878 r  clk_IBUF_BUFG_inst/O
+                         net (fo=35, routed)          0.581     1.459    clk_IBUF_BUFG
+    SLICE_X40Y68         FDCE                                         r  Update_Registre1_reg/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X40Y68         FDCE (Prop_fdce_C_Q)         0.141     1.600 r  Update_Registre1_reg/Q
+                         net (fo=1, routed)           0.172     1.772    Update_Registre1
+    SLICE_X40Y68         FDCE                                         r  Update_Registre2_reg/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    H16                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    H16                  IBUF (Prop_ibuf_I_O)         0.413     0.413 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.683     1.096    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.125 r  clk_IBUF_BUFG_inst/O
+                         net (fo=35, routed)          0.849     1.974    clk_IBUF_BUFG
+    SLICE_X40Y68         FDCE                                         r  Update_Registre2_reg/C
+                         clock pessimism             -0.515     1.459    
+    SLICE_X40Y68         FDCE (Hold_fdce_C_D)         0.070     1.529    Update_Registre2_reg
+  -------------------------------------------------------------------
+                         required time                         -1.529    
+                         arrival time                           1.772    
+  -------------------------------------------------------------------
+                         slack                                  0.243    
+
+Slack (MET) :             0.243ns  (arrival time - required time)
+  Source:                 Update_Registre2_reg/C
+                            (rising edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            Compteur/Data_Code_Couleur_reg[0]/D
+                            (rising edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.348ns  (logic 0.186ns (53.423%)  route 0.162ns (46.577%))
+  Logic Levels:           1  (LUT5=1)
+  Clock Path Skew:        0.013ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.974ns
+    Source Clock Delay      (SCD):    1.459ns
+    Clock Pessimism Removal (CPR):    0.502ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    H16                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    H16                  IBUF (Prop_ibuf_I_O)         0.225     0.225 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.627     0.852    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.878 r  clk_IBUF_BUFG_inst/O
+                         net (fo=35, routed)          0.581     1.459    clk_IBUF_BUFG
+    SLICE_X40Y68         FDCE                                         r  Update_Registre2_reg/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X40Y68         FDCE (Prop_fdce_C_Q)         0.141     1.600 r  Update_Registre2_reg/Q
+                         net (fo=3, routed)           0.162     1.762    Compteur/Compteur/Update_Registre2
+    SLICE_X41Y68         LUT5 (Prop_lut5_I3_O)        0.045     1.807 r  Compteur/Compteur/Data_Code_Couleur[0]_i_1/O
+                         net (fo=1, routed)           0.000     1.807    Compteur/Compteur_n_2
+    SLICE_X41Y68         FDCE                                         r  Compteur/Data_Code_Couleur_reg[0]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    H16                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    H16                  IBUF (Prop_ibuf_I_O)         0.413     0.413 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.683     1.096    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.125 r  clk_IBUF_BUFG_inst/O
+                         net (fo=35, routed)          0.849     1.974    Compteur/CLK
+    SLICE_X41Y68         FDCE                                         r  Compteur/Data_Code_Couleur_reg[0]/C
+                         clock pessimism             -0.502     1.472    
+    SLICE_X41Y68         FDCE (Hold_fdce_C_D)         0.092     1.564    Compteur/Data_Code_Couleur_reg[0]
+  -------------------------------------------------------------------
+                         required time                         -1.564    
+                         arrival time                           1.807    
+  -------------------------------------------------------------------
+                         slack                                  0.243    
+
+Slack (MET) :             0.314ns  (arrival time - required time)
+  Source:                 Compteur/Compteur/D_out_reg[3]/C
+                            (rising edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            Compteur/Compteur/D_out_reg[3]/D
+                            (rising edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.419ns  (logic 0.249ns (59.393%)  route 0.170ns (40.607%))
+  Logic Levels:           2  (CARRY4=1 LUT6=1)
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.977ns
+    Source Clock Delay      (SCD):    1.462ns
+    Clock Pessimism Removal (CPR):    0.515ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    H16                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    H16                  IBUF (Prop_ibuf_I_O)         0.225     0.225 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.627     0.852    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.878 r  clk_IBUF_BUFG_inst/O
+                         net (fo=35, routed)          0.584     1.462    Compteur/Compteur/CLK
+    SLICE_X43Y65         FDCE                                         r  Compteur/Compteur/D_out_reg[3]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X43Y65         FDCE (Prop_fdce_C_Q)         0.141     1.603 r  Compteur/Compteur/D_out_reg[3]/Q
+                         net (fo=2, routed)           0.170     1.773    Compteur/Compteur/D_out_reg[3]
+    SLICE_X43Y65         LUT6 (Prop_lut6_I0_O)        0.045     1.818 r  Compteur/Compteur/D_out[0]_i_3/O
+                         net (fo=1, routed)           0.000     1.818    Compteur/Compteur/D_out[0]_i_3_n_0
+    SLICE_X43Y65         CARRY4 (Prop_carry4_S[3]_O[3])
+                                                      0.063     1.881 r  Compteur/Compteur/D_out_reg[0]_i_1/O[3]
+                         net (fo=1, routed)           0.000     1.881    Compteur/Compteur/D_out_reg[0]_i_1_n_4
+    SLICE_X43Y65         FDCE                                         r  Compteur/Compteur/D_out_reg[3]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    H16                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    H16                  IBUF (Prop_ibuf_I_O)         0.413     0.413 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.683     1.096    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.125 r  clk_IBUF_BUFG_inst/O
+                         net (fo=35, routed)          0.852     1.977    Compteur/Compteur/CLK
+    SLICE_X43Y65         FDCE                                         r  Compteur/Compteur/D_out_reg[3]/C
+                         clock pessimism             -0.515     1.462    
+    SLICE_X43Y65         FDCE (Hold_fdce_C_D)         0.105     1.567    Compteur/Compteur/D_out_reg[3]
+  -------------------------------------------------------------------
+                         required time                         -1.567    
+                         arrival time                           1.881    
+  -------------------------------------------------------------------
+                         slack                                  0.314    
+
+Slack (MET) :             0.314ns  (arrival time - required time)
+  Source:                 Compteur/Compteur/D_out_reg[15]/C
+                            (rising edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            Compteur/Compteur/D_out_reg[15]/D
+                            (rising edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.419ns  (logic 0.249ns (59.393%)  route 0.170ns (40.607%))
+  Logic Levels:           2  (CARRY4=1 LUT6=1)
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.974ns
+    Source Clock Delay      (SCD):    1.459ns
+    Clock Pessimism Removal (CPR):    0.515ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    H16                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    H16                  IBUF (Prop_ibuf_I_O)         0.225     0.225 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.627     0.852    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.878 r  clk_IBUF_BUFG_inst/O
+                         net (fo=35, routed)          0.581     1.459    Compteur/Compteur/CLK
+    SLICE_X43Y68         FDCE                                         r  Compteur/Compteur/D_out_reg[15]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X43Y68         FDCE (Prop_fdce_C_Q)         0.141     1.600 r  Compteur/Compteur/D_out_reg[15]/Q
+                         net (fo=2, routed)           0.170     1.770    Compteur/Compteur/D_out_reg[15]
+    SLICE_X43Y68         LUT6 (Prop_lut6_I0_O)        0.045     1.815 r  Compteur/Compteur/D_out[12]_i_2/O
+                         net (fo=1, routed)           0.000     1.815    Compteur/Compteur/D_out[12]_i_2_n_0
+    SLICE_X43Y68         CARRY4 (Prop_carry4_S[3]_O[3])
+                                                      0.063     1.878 r  Compteur/Compteur/D_out_reg[12]_i_1/O[3]
+                         net (fo=1, routed)           0.000     1.878    Compteur/Compteur/D_out_reg[12]_i_1_n_4
+    SLICE_X43Y68         FDCE                                         r  Compteur/Compteur/D_out_reg[15]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    H16                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    H16                  IBUF (Prop_ibuf_I_O)         0.413     0.413 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.683     1.096    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.125 r  clk_IBUF_BUFG_inst/O
+                         net (fo=35, routed)          0.849     1.974    Compteur/Compteur/CLK
+    SLICE_X43Y68         FDCE                                         r  Compteur/Compteur/D_out_reg[15]/C
+                         clock pessimism             -0.515     1.459    
+    SLICE_X43Y68         FDCE (Hold_fdce_C_D)         0.105     1.564    Compteur/Compteur/D_out_reg[15]
+  -------------------------------------------------------------------
+                         required time                         -1.564    
+                         arrival time                           1.878    
+  -------------------------------------------------------------------
+                         slack                                  0.314    
+
+Slack (MET) :             0.314ns  (arrival time - required time)
+  Source:                 Compteur/Compteur/D_out_reg[11]/C
+                            (rising edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            Compteur/Compteur/D_out_reg[11]/D
+                            (rising edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.419ns  (logic 0.249ns (59.393%)  route 0.170ns (40.607%))
+  Logic Levels:           2  (CARRY4=1 LUT6=1)
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.975ns
+    Source Clock Delay      (SCD):    1.460ns
+    Clock Pessimism Removal (CPR):    0.515ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    H16                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    H16                  IBUF (Prop_ibuf_I_O)         0.225     0.225 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.627     0.852    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.878 r  clk_IBUF_BUFG_inst/O
+                         net (fo=35, routed)          0.582     1.460    Compteur/Compteur/CLK
+    SLICE_X43Y67         FDCE                                         r  Compteur/Compteur/D_out_reg[11]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X43Y67         FDCE (Prop_fdce_C_Q)         0.141     1.601 r  Compteur/Compteur/D_out_reg[11]/Q
+                         net (fo=3, routed)           0.170     1.771    Compteur/Compteur/D_out_reg[11]
+    SLICE_X43Y67         LUT6 (Prop_lut6_I0_O)        0.045     1.816 r  Compteur/Compteur/D_out[8]_i_2/O
+                         net (fo=1, routed)           0.000     1.816    Compteur/Compteur/D_out[8]_i_2_n_0
+    SLICE_X43Y67         CARRY4 (Prop_carry4_S[3]_O[3])
+                                                      0.063     1.879 r  Compteur/Compteur/D_out_reg[8]_i_1/O[3]
+                         net (fo=1, routed)           0.000     1.879    Compteur/Compteur/D_out_reg[8]_i_1_n_4
+    SLICE_X43Y67         FDCE                                         r  Compteur/Compteur/D_out_reg[11]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    H16                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    H16                  IBUF (Prop_ibuf_I_O)         0.413     0.413 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.683     1.096    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.125 r  clk_IBUF_BUFG_inst/O
+                         net (fo=35, routed)          0.850     1.975    Compteur/Compteur/CLK
+    SLICE_X43Y67         FDCE                                         r  Compteur/Compteur/D_out_reg[11]/C
+                         clock pessimism             -0.515     1.460    
+    SLICE_X43Y67         FDCE (Hold_fdce_C_D)         0.105     1.565    Compteur/Compteur/D_out_reg[11]
+  -------------------------------------------------------------------
+                         required time                         -1.565    
+                         arrival time                           1.879    
+  -------------------------------------------------------------------
+                         slack                                  0.314    
+
+Slack (MET) :             0.319ns  (arrival time - required time)
+  Source:                 Compteur/Compteur/D_out_reg[24]/C
+                            (rising edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            Compteur/Compteur/D_out_reg[24]/D
+                            (rising edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.424ns  (logic 0.256ns (60.343%)  route 0.168ns (39.657%))
+  Logic Levels:           2  (CARRY4=1 LUT6=1)
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.971ns
+    Source Clock Delay      (SCD):    1.456ns
+    Clock Pessimism Removal (CPR):    0.515ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    H16                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    H16                  IBUF (Prop_ibuf_I_O)         0.225     0.225 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.627     0.852    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.878 r  clk_IBUF_BUFG_inst/O
+                         net (fo=35, routed)          0.578     1.456    Compteur/Compteur/CLK
+    SLICE_X43Y71         FDCE                                         r  Compteur/Compteur/D_out_reg[24]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X43Y71         FDCE (Prop_fdce_C_Q)         0.141     1.597 r  Compteur/Compteur/D_out_reg[24]/Q
+                         net (fo=2, routed)           0.168     1.765    Compteur/Compteur/D_out_reg[24]
+    SLICE_X43Y71         LUT6 (Prop_lut6_I0_O)        0.045     1.810 r  Compteur/Compteur/D_out[24]_i_4/O
+                         net (fo=1, routed)           0.000     1.810    Compteur/Compteur/D_out[24]_i_4_n_0
+    SLICE_X43Y71         CARRY4 (Prop_carry4_S[0]_O[0])
+                                                      0.070     1.880 r  Compteur/Compteur/D_out_reg[24]_i_1/O[0]
+                         net (fo=1, routed)           0.000     1.880    Compteur/Compteur/D_out_reg[24]_i_1_n_7
+    SLICE_X43Y71         FDCE                                         r  Compteur/Compteur/D_out_reg[24]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    H16                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    H16                  IBUF (Prop_ibuf_I_O)         0.413     0.413 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.683     1.096    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.125 r  clk_IBUF_BUFG_inst/O
+                         net (fo=35, routed)          0.846     1.971    Compteur/Compteur/CLK
+    SLICE_X43Y71         FDCE                                         r  Compteur/Compteur/D_out_reg[24]/C
+                         clock pessimism             -0.515     1.456    
+    SLICE_X43Y71         FDCE (Hold_fdce_C_D)         0.105     1.561    Compteur/Compteur/D_out_reg[24]
+  -------------------------------------------------------------------
+                         required time                         -1.561    
+                         arrival time                           1.880    
+  -------------------------------------------------------------------
+                         slack                                  0.319    
+
+Slack (MET) :             0.319ns  (arrival time - required time)
+  Source:                 Compteur/Compteur/D_out_reg[8]/C
+                            (rising edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            Compteur/Compteur/D_out_reg[8]/D
+                            (rising edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.424ns  (logic 0.256ns (60.343%)  route 0.168ns (39.657%))
+  Logic Levels:           2  (CARRY4=1 LUT6=1)
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.975ns
+    Source Clock Delay      (SCD):    1.460ns
+    Clock Pessimism Removal (CPR):    0.515ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    H16                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    H16                  IBUF (Prop_ibuf_I_O)         0.225     0.225 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.627     0.852    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.878 r  clk_IBUF_BUFG_inst/O
+                         net (fo=35, routed)          0.582     1.460    Compteur/Compteur/CLK
+    SLICE_X43Y67         FDCE                                         r  Compteur/Compteur/D_out_reg[8]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X43Y67         FDCE (Prop_fdce_C_Q)         0.141     1.601 r  Compteur/Compteur/D_out_reg[8]/Q
+                         net (fo=3, routed)           0.168     1.769    Compteur/Compteur/D_out_reg[8]
+    SLICE_X43Y67         LUT6 (Prop_lut6_I0_O)        0.045     1.814 r  Compteur/Compteur/D_out[8]_i_5/O
+                         net (fo=1, routed)           0.000     1.814    Compteur/Compteur/D_out[8]_i_5_n_0
+    SLICE_X43Y67         CARRY4 (Prop_carry4_S[0]_O[0])
+                                                      0.070     1.884 r  Compteur/Compteur/D_out_reg[8]_i_1/O[0]
+                         net (fo=1, routed)           0.000     1.884    Compteur/Compteur/D_out_reg[8]_i_1_n_7
+    SLICE_X43Y67         FDCE                                         r  Compteur/Compteur/D_out_reg[8]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    H16                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    H16                  IBUF (Prop_ibuf_I_O)         0.413     0.413 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.683     1.096    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.125 r  clk_IBUF_BUFG_inst/O
+                         net (fo=35, routed)          0.850     1.975    Compteur/Compteur/CLK
+    SLICE_X43Y67         FDCE                                         r  Compteur/Compteur/D_out_reg[8]/C
+                         clock pessimism             -0.515     1.460    
+    SLICE_X43Y67         FDCE (Hold_fdce_C_D)         0.105     1.565    Compteur/Compteur/D_out_reg[8]
+  -------------------------------------------------------------------
+                         required time                         -1.565    
+                         arrival time                           1.884    
+  -------------------------------------------------------------------
+                         slack                                  0.319    
+
+Slack (MET) :             0.324ns  (arrival time - required time)
+  Source:                 Compteur/Compteur/D_out_reg[23]/C
+                            (rising edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            Compteur/Compteur/D_out_reg[23]/D
+                            (rising edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.429ns  (logic 0.249ns (58.000%)  route 0.180ns (42.000%))
+  Logic Levels:           2  (CARRY4=1 LUT6=1)
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.972ns
+    Source Clock Delay      (SCD):    1.457ns
+    Clock Pessimism Removal (CPR):    0.515ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    H16                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    H16                  IBUF (Prop_ibuf_I_O)         0.225     0.225 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.627     0.852    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.878 r  clk_IBUF_BUFG_inst/O
+                         net (fo=35, routed)          0.579     1.457    Compteur/Compteur/CLK
+    SLICE_X43Y70         FDCE                                         r  Compteur/Compteur/D_out_reg[23]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X43Y70         FDCE (Prop_fdce_C_Q)         0.141     1.598 r  Compteur/Compteur/D_out_reg[23]/Q
+                         net (fo=3, routed)           0.180     1.778    Compteur/Compteur/D_out_reg[23]
+    SLICE_X43Y70         LUT6 (Prop_lut6_I0_O)        0.045     1.823 r  Compteur/Compteur/D_out[20]_i_2/O
+                         net (fo=1, routed)           0.000     1.823    Compteur/Compteur/D_out[20]_i_2_n_0
+    SLICE_X43Y70         CARRY4 (Prop_carry4_S[3]_O[3])
+                                                      0.063     1.886 r  Compteur/Compteur/D_out_reg[20]_i_1/O[3]
+                         net (fo=1, routed)           0.000     1.886    Compteur/Compteur/D_out_reg[20]_i_1_n_4
+    SLICE_X43Y70         FDCE                                         r  Compteur/Compteur/D_out_reg[23]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    H16                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    H16                  IBUF (Prop_ibuf_I_O)         0.413     0.413 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.683     1.096    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.125 r  clk_IBUF_BUFG_inst/O
+                         net (fo=35, routed)          0.847     1.972    Compteur/Compteur/CLK
+    SLICE_X43Y70         FDCE                                         r  Compteur/Compteur/D_out_reg[23]/C
+                         clock pessimism             -0.515     1.457    
+    SLICE_X43Y70         FDCE (Hold_fdce_C_D)         0.105     1.562    Compteur/Compteur/D_out_reg[23]
+  -------------------------------------------------------------------
+                         required time                         -1.562    
+                         arrival time                           1.886    
+  -------------------------------------------------------------------
+                         slack                                  0.324    
+
+
+
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         sys_clk_pin
+Waveform(ns):       { 0.000 4.000 }
+Period(ns):         8.000
+Sources:            { clk }
+
+Check Type        Corner  Lib Pin  Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location        Pin
+Min Period        n/a     BUFG/I   n/a            2.155         8.000       5.845      BUFGCTRL_X0Y16  clk_IBUF_BUFG_inst/I
+Min Period        n/a     FDCE/C   n/a            1.000         8.000       7.000      SLICE_X41Y68    Color_Code_reg[0]/C
+Min Period        n/a     FDCE/C   n/a            1.000         8.000       7.000      SLICE_X40Y68    Color_Code_reg[1]/C
+Min Period        n/a     FDCE/C   n/a            1.000         8.000       7.000      SLICE_X43Y65    Compteur/Compteur/D_out_reg[0]/C
+Min Period        n/a     FDCE/C   n/a            1.000         8.000       7.000      SLICE_X43Y67    Compteur/Compteur/D_out_reg[10]/C
+Min Period        n/a     FDCE/C   n/a            1.000         8.000       7.000      SLICE_X43Y67    Compteur/Compteur/D_out_reg[11]/C
+Min Period        n/a     FDCE/C   n/a            1.000         8.000       7.000      SLICE_X43Y68    Compteur/Compteur/D_out_reg[12]/C
+Min Period        n/a     FDCE/C   n/a            1.000         8.000       7.000      SLICE_X43Y68    Compteur/Compteur/D_out_reg[13]/C
+Min Period        n/a     FDCE/C   n/a            1.000         8.000       7.000      SLICE_X43Y68    Compteur/Compteur/D_out_reg[14]/C
+Min Period        n/a     FDCE/C   n/a            1.000         8.000       7.000      SLICE_X43Y68    Compteur/Compteur/D_out_reg[15]/C
+Low Pulse Width   Slow    FDCE/C   n/a            0.500         4.000       3.500      SLICE_X43Y67    Compteur/Compteur/D_out_reg[10]/C
+Low Pulse Width   Slow    FDCE/C   n/a            0.500         4.000       3.500      SLICE_X43Y67    Compteur/Compteur/D_out_reg[11]/C
+Low Pulse Width   Slow    FDCE/C   n/a            0.500         4.000       3.500      SLICE_X43Y67    Compteur/Compteur/D_out_reg[8]/C
+Low Pulse Width   Slow    FDCE/C   n/a            0.500         4.000       3.500      SLICE_X43Y67    Compteur/Compteur/D_out_reg[9]/C
+Low Pulse Width   Slow    FDCE/C   n/a            0.500         4.000       3.500      SLICE_X41Y68    Color_Code_reg[0]/C
+Low Pulse Width   Slow    FDCE/C   n/a            0.500         4.000       3.500      SLICE_X40Y68    Color_Code_reg[1]/C
+Low Pulse Width   Slow    FDCE/C   n/a            0.500         4.000       3.500      SLICE_X43Y68    Compteur/Compteur/D_out_reg[12]/C
+Low Pulse Width   Slow    FDCE/C   n/a            0.500         4.000       3.500      SLICE_X43Y68    Compteur/Compteur/D_out_reg[13]/C
+Low Pulse Width   Slow    FDCE/C   n/a            0.500         4.000       3.500      SLICE_X43Y68    Compteur/Compteur/D_out_reg[14]/C
+Low Pulse Width   Slow    FDCE/C   n/a            0.500         4.000       3.500      SLICE_X43Y68    Compteur/Compteur/D_out_reg[15]/C
+High Pulse Width  Fast    FDCE/C   n/a            0.500         4.000       3.500      SLICE_X41Y68    Color_Code_reg[0]/C
+High Pulse Width  Fast    FDCE/C   n/a            0.500         4.000       3.500      SLICE_X40Y68    Color_Code_reg[1]/C
+High Pulse Width  Slow    FDCE/C   n/a            0.500         4.000       3.500      SLICE_X43Y65    Compteur/Compteur/D_out_reg[0]/C
+High Pulse Width  Fast    FDCE/C   n/a            0.500         4.000       3.500      SLICE_X43Y65    Compteur/Compteur/D_out_reg[0]/C
+High Pulse Width  Fast    FDCE/C   n/a            0.500         4.000       3.500      SLICE_X43Y68    Compteur/Compteur/D_out_reg[12]/C
+High Pulse Width  Fast    FDCE/C   n/a            0.500         4.000       3.500      SLICE_X43Y68    Compteur/Compteur/D_out_reg[13]/C
+High Pulse Width  Fast    FDCE/C   n/a            0.500         4.000       3.500      SLICE_X43Y68    Compteur/Compteur/D_out_reg[14]/C
+High Pulse Width  Fast    FDCE/C   n/a            0.500         4.000       3.500      SLICE_X43Y68    Compteur/Compteur/D_out_reg[15]/C
+High Pulse Width  Fast    FDCE/C   n/a            0.500         4.000       3.500      SLICE_X43Y69    Compteur/Compteur/D_out_reg[16]/C
+High Pulse Width  Fast    FDCE/C   n/a            0.500         4.000       3.500      SLICE_X43Y69    Compteur/Compteur/D_out_reg[17]/C
+
+
+
