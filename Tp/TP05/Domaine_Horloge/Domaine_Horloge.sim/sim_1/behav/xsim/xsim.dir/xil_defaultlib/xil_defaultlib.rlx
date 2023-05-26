@@ -1,0 +1,11 @@
+0.7
+2020.2
+Nov 18 2020
+09:47:47
+C:/Users/hicha/OneDrive/Bureau/TP05/Domaine_Horloge.vhd,1685027264,vhdl,,,,domaine_horloge,,,,,,,,
+C:/Users/hicha/OneDrive/Bureau/TP05/Domaine_Horloge/Domaine_Horloge.gen/sources_1/ip/PLL_Clock/PLL_Clock.v,1685024304,verilog,,,,PLL_Clock,,,../../../../Domaine_Horloge.gen/sources_1/ip/PLL_Clock,,,,,
+C:/Users/hicha/OneDrive/Bureau/TP05/Domaine_Horloge/Domaine_Horloge.gen/sources_1/ip/PLL_Clock/PLL_Clock_clk_wiz.v,1685024304,verilog,,C:/Users/hicha/OneDrive/Bureau/TP05/Domaine_Horloge/Domaine_Horloge.gen/sources_1/ip/PLL_Clock/PLL_Clock.v,,PLL_Clock_clk_wiz,,,../../../../Domaine_Horloge.gen/sources_1/ip/PLL_Clock,,,,,
+C:/Users/hicha/OneDrive/Bureau/TP05/Domaine_Horloge/Domaine_Horloge.sim/sim_1/behav/xsim/glbl.v,1685016386,verilog,,,,glbl,,,,,,,,
+C:/Users/hicha/OneDrive/Bureau/TP05/Module/Counter_unit.vhd,1685026413,vhdl,,,,counter_unit,,,,,,,,
+C:/Users/hicha/OneDrive/Bureau/TP05/Module/LedDriver.vhd,1685024968,vhdl,,,,leddriver,,,,,,,,
+C:/Users/hicha/OneDrive/Bureau/TP05/tb_Domaine_Horloge.vhd,1685016380,vhdl,,,,tb_domaine_horloge,,,,,,,,
